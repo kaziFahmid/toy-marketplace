@@ -31,6 +31,13 @@ export default function Header() {
         <li className="nav-item me-3">
           <Link className="nav-link"> User profile picture.</Link>
         </li>
+
+        <li className="nav-item me-3">
+          <Link className="nav-link"> Login</Link>
+        </li>
+        <li className="nav-item me-3">
+          <Link className="nav-link"> Sign up</Link>
+        </li>
       </ul>
     </div>
   </div>
