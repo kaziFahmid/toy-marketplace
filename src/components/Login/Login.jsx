@@ -18,7 +18,7 @@ export default function Login() {
             <input type="password" name='password' className="form-control" />
             <Link>Forgot Password?</Link>
           </div>
-         
+         <p>You dont have account ?<Link to='/signup'>create an account</Link></p>
 
       <div className='text-center'>
       <button className="btn btn-light text-black">Google</button><br/>
