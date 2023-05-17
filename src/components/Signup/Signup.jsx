@@ -23,6 +23,11 @@ export default function Signup() {
         <label htmlFor="password">Password</label>
         <input type="password" className="form-control" id="password" name="password" />
       </div>
+
+      <div className="form-group mt-3">
+        <label htmlFor="password">Photo URL</label>
+        <input type="file" className="form-control" id="file" name="file" />
+      </div>
   <p className='mt-2'>Have account <Link to='/login'> Login</Link></p>
 <div className='text-center'>
 <button className=' btn btn-light mt-4 text-black px-5'>Google</button><br/>
