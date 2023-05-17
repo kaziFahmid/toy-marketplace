@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-md-4">
               <h2 className=" text-danger fw-bold">FunToys</h2>
-              {/* Your logo image or text goes here */}
+
             </div>
             <div className="col-md-4">
               <h4>Contact Information</h4>
