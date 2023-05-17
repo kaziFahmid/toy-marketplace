@@ -11,7 +11,7 @@ export default function Footer() {
             </div>
             <div className="col-md-4">
               <h4>Contact Information</h4>
-              {/* Your contact information goes here */}
+             
             </div>
             <div className="col-md-4">
               <h4>Social Media</h4>
