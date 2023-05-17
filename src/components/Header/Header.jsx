@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -11,17 +12,24 @@ export default function Header() {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+  
+        <li className="nav-item me-3">
+          <Link className="nav-link text-danger " aria-current="page" to='/'>Home</Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
+        <li className="nav-item me-3">
+          <Link className="nav-link" >All Toys</Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
+        <li className="nav-item me-3">
+          <Link className="nav-link" >My Toys</Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
+        <li className="nav-item me-3">
+          <Link className="nav-link ">Add A Toy</Link>
+        </li>
+        <li className="nav-item me-3">
+          <Link className="nav-link"> Blogs</Link>
+        </li>
+        <li className="nav-item me-3">
+          <Link className="nav-link"> User profile picture.</Link>
         </li>
       </ul>
     </div>
