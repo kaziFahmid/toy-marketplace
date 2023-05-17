@@ -15,6 +15,7 @@ export default function Footer() {
             </div>
             <div className="col-md-4">
               <h4>Social Media</h4>
+              
      
             </div>
           </div>
@@ -25,7 +26,7 @@ export default function Footer() {
           </div>
           <div className="row">
             <div className="col">
-              <p>123 Main Street, City, State ZIP</p>
+              <p>123 Main Street, City, State ZIP-121</p>
             </div>
           </div>
         </div>
