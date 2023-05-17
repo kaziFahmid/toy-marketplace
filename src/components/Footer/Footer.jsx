@@ -15,7 +15,7 @@ export default function Footer() {
             </div>
             <div className="col-md-4">
               <h4>Social Media</h4>
-              {/* Your social media links go here */}
+     
             </div>
           </div>
           <div className="row">
