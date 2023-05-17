@@ -6,7 +6,7 @@ export default function Login() {
     <div>
         <h1 className='text-danger text-center mt-4 '>FunToys</h1>
         <p className='text-center mt-2'>Get the most high quality action figures </p>
-            <div className="w-50 mx-auto mb-5 mt-5 ">
+            <form className="w-50 mx-auto mb-5 mt-5 ">
         <div className="shadow p-5">
           <h2 className="text-center mb-4 text-danger">Login</h2>
           <div className="mb-3">
@@ -26,7 +26,7 @@ export default function Login() {
       </div>
 
         </div>
-      </div>
+      </form>
 
       
     </div>
