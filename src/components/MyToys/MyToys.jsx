@@ -26,7 +26,7 @@ export default function MyToys() {
       confirmButtonText: 'Yes, delete it!'
     }).then(result => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/addedtoys/${_id}`, {
+        fetch(`https://toy-server-nine.vercel.app/addedtoys/${_id}`, {
           method: 'DELETE'
         })
           .then(res => res.json())
