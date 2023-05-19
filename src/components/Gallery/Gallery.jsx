@@ -14,7 +14,7 @@ export default function Gallery() {
    
    <div className='d-flex
      mt-5'>
-     {gallery.map((x)=><div className='ms-3'><img src={x} className='img-fluid'/> </div> )}
+     {gallery.map((x)=><div key={x} className='ms-3'><img src={x} className='img-fluid'/> </div> )}
     </div>
    
    </>
