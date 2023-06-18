@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { AuthContext } from '../AuthProvider/AuthProvider';
 
 export default function Toys() {
+  const{user}=useContext(AuthContext)
   const [toys, setToys] = useState([]);
 
   useEffect(() => {
@@ -19,7 +21,10 @@ export default function Toys() {
   }, []);
 
   let handleViewChange =()=>{
-    alert("You have to log in first to view details")
+    if(!user){
+      alert("You have to log in first to view details")
+    }
+
   }
   const types = [...new Set(toys.map((toy) => toy.type))];
 

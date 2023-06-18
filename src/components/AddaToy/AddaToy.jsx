@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import { AuthContext } from '../AuthProvider/AuthProvider'
 import UseTitle from '../../UseTitle'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function AddaToy() {
     const {user}=useContext(AuthContext)
     UseTitle("Add A Toy")
@@ -35,11 +37,17 @@ const addedToys={photo,
     body:JSON.stringify(addedToys)
    }) 
    .then(res=>res.json())
-   .then(data=>console.log(data))
+   .then(data=>{
+    if(data.insertedId){
+      toast("Toy has been added!")
+    }
+   }
+    )
 
     }
   return (
     <div className="container my-5">
+            <ToastContainer />
     <h1 className='text-danger text-center'>Add A Toy</h1>
     <form onSubmit={handleAddToy}>
       <div className="mb-3">

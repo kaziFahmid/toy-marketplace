@@ -24,12 +24,12 @@ export default function Header() {
         <li className="nav-item me-3">
           <Link className="nav-link" to='/alltoys'>All Toys</Link>
         </li>
-        <li className="nav-item me-3">
+       {user?.email&& <li className="nav-item me-3">
           <Link className="nav-link"to='/mytoys' >My Toys</Link>
-        </li>
-        <li className="nav-item me-3">
+        </li>}
+      {user?.email &&  <li className="nav-item me-3">
           <Link className="nav-link " to='/addatoy'>Add A Toy</Link>
-        </li>
+        </li>}
         <li className="nav-item me-3">
           <Link className="nav-link" to='/blogs'> Blogs</Link>
         </li>

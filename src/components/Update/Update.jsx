@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLoaderData } from 'react-router-dom'
-
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 export default function Update() {
 
@@ -28,7 +29,7 @@ export default function Update() {
      .then(res=>res.json())
      .then(data=>{
        if(data.modifiedCount>0){
-        alert('updated successfully')
+        toast('updated successfully')
        }
      })
 
@@ -36,6 +37,7 @@ export default function Update() {
   return (
     <div>
         <div className="container my-5" >
+        <ToastContainer />
     <h1 className='text-danger text-center'>Update Toy</h1>
     <form onSubmit={handleUpdate}>
      
